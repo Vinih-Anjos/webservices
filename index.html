@@ -1,47 +1,46 @@
-<h2 style="text-align: center;"><strong>O que &eacute; HTTP?</strong></h2>
+<h2 style="text-align: left;"><strong>O que &eacute; HTTP?</strong></h2>
 <p>HTTP &eacute; sigla de&nbsp;<em>HyperText Transfer Protocol</em>&nbsp;que em portugu&ecirc;s significa "Protocolo de Transfer&ecirc;ncia de Hipertexto". &Eacute; um protocolo de comunica&ccedil;&atilde;o entre sistemas de informa&ccedil;&atilde;o que permite a transfer&ecirc;ncia de dados entre redes de computadores, principalmente na&nbsp;<em>World Wide Web</em>&nbsp;(Internet).</p>
 <p>O HTTP &eacute; o protocolo utilizado para transfer&ecirc;ncia de p&aacute;ginas HTML do computador para a Internet. Por isso, os endere&ccedil;os dos websites (URL) utilizam no in&iacute;cio a express&atilde;o "http://", definindo o protocolo usado. Esta informa&ccedil;&atilde;o &eacute; necess&aacute;ria para estabelecer a comunica&ccedil;&atilde;o entre a URL e o servidor Web que armazena os dados, enviando ent&atilde;o a p&aacute;gina HTML solicitada pelo usu&aacute;rio.</p>
 <p>Para que a transfer&ecirc;ncia de dados na Internet seja realizada, o protocolo HTTP necessita estar agregado a outros dois protocolos de rede: TCP (<em>Transmission Control Protocol</em>) e IP (<em>Internet Protocol</em>). Esses dois &uacute;ltimos protocolos formam o modelo TCP/IP, necess&aacute;rio para a conex&atilde;o entre computadores clientes-servidores.</p>
 <h2 style="text-align: left;"><strong>Como o HTTP funciona?</strong></h2>
 <p>Quando voc&ecirc; digitou o endere&ccedil;o do nosso blog, pesquisou ele em um buscador ou clicou no link desse artigo, voc&ecirc; fez um pedido via HTTP para o nosso servidor. Para entendermos o que &eacute; HTTP, vamos explicar com alguns exemplos.</p>
-<p>Esse pedido se chama Request HTTP. Primeiramente, o navegador descobre o&nbsp;<a href="https://www.homehost.com.br/blog/internet/meu-ip/"><strong>endere&ccedil;o IP</strong></a>&nbsp;do servidor web usando o&nbsp;<a href="https://www.homehost.com.br/blog/internet/dns-voce-sabe-o-que-significa-essa-sigla/"><strong>DNS</strong></a>.&nbsp; Em seguida, o navegador web faz a conex&atilde;o diretamente com o servidor web, solicitando uma p&aacute;gina, imagem ou algum outro arquivo.&nbsp; Por sua vez, o servidor HTTP envia ao navegador do cliente o conte&uacute;do solicitado.</p>
+<p>Esse pedido se chama Request HTTP. Primeiramente, o navegador descobre o&nbsp;<strong>endere&ccedil;o IP</strong>&nbsp;do servidor web usando o&nbsp;<strong>DNS</strong>.&nbsp; Em seguida, o navegador web faz a conex&atilde;o diretamente com o servidor web, solicitando uma p&aacute;gina, imagem ou algum outro arquivo.&nbsp; Por sua vez, o servidor HTTP envia ao navegador do cliente o conte&uacute;do solicitado.</p>
 <p>Ao receber o seu pedido, nosso servidor leu tudo e entregou o conte&uacute;do para voc&ecirc; conforme a demanda. Por exemplo, a entrega tamb&eacute;m &eacute; feita por uma esp&eacute;cie de carta, que nada mais &eacute; do que o site visualizado na tela do seu PC, Tablet ou Smartphone. Simples, n&atilde;o? O mais impressionante &eacute; que esse processo demora apenas alguns segundos ou at&eacute; menos!</p>
 <p>&nbsp;</p>
 <h2><strong>Resolve que problema?</strong></h2>
-<p>Al&eacute;m do conte&uacute;do da p&aacute;gina web, um servidor de hospedagem de sites sempre retorna os c&oacute;digos de resposta. Eles representam mensagens de sucesso ou falha, quando acessamos um site. Por exemplo, quando uma p&aacute;gina &eacute; carregada com sucesso, o servidor informa o c&oacute;digo 200 (Sucesso). Contudo, quando uma p&aacute;gina n&atilde;o &eacute; encontrada, ele informa o c&oacute;digo de<a href="https://www.homehost.com.br/blog/internet/erro-404-not-found/"><strong>&nbsp;erro 404</strong></a>&nbsp;(N&atilde;o Encontrado). Nos casos em que h&aacute; problemas no site, o c&oacute;digo retornado &eacute; o&nbsp;<a href="https://www.homehost.com.br/blog/tutoriais/php/http-erro-500/"><strong>erro 500</strong></a>. Voc&ecirc; pode ver neste outro artigo uma rela&ccedil;&atilde;o completa com os&nbsp;<a href="https://www.homehost.com.br/blog/internet/status-http-o-que-sao-codigos-de-resposta/"><strong>c&oacute;digos de resposta do servidor HTTP</strong></a>.</p>
+<p>Al&eacute;m do conte&uacute;do da p&aacute;gina web, um servidor de hospedagem de sites sempre retorna os c&oacute;digos de resposta. Eles representam mensagens de sucesso ou falha, quando acessamos um site. Por exemplo, quando uma p&aacute;gina &eacute; carregada com sucesso, o servidor informa o c&oacute;digo 200 (Sucesso). Contudo, quando uma p&aacute;gina n&atilde;o &eacute; encontrada, ele informa o c&oacute;digo de<strong>&nbsp;erro 404</strong>&nbsp;(N&atilde;o Encontrado). Nos casos em que h&aacute; problemas no site, o c&oacute;digo retornado &eacute; o&nbsp;<strong>erro 500.</strong> Voc&ecirc; pode ver neste outro artigo uma rela&ccedil;&atilde;o completa com os&nbsp;<strong>c&oacute;digos de </strong><strong>resposta do servidor HTTP</strong><strong>.</strong></p>
 <p>&nbsp;</p>
+<h2><strong>Qual &eacute; o contexto?</strong></h2>
+<p>Em meados de 1991, Tim Berners Lee criou um protocolo para fazer o download de arquivos hipertexto de servidores. Hipertexto eram os primeitos arquivos que faziam uso da linguagem HTML (Hyper Text Markup Language). A primeira vers&atilde;o do protocolo HTTP &eacute;ra bastante simples, e funcionava atrav&eacute;s de Telnet (um protocolo de comunica&ccedil;&atilde;o de servidores, similar ao&nbsp;<strong>SSH</strong>). Entre os anos de 1991 e 1995, surgiram os primeiros navegadores web. Por sua vez, eles faziam o download das p&aacute;ginas hipertexto, j&aacute; usando o protocolo HTTP.</p>
+<p>A grande evolu&ccedil;&atilde;o do protocolo HTTP ocorreu em 1996, quando foi lan&ccedil;ada a vers&atilde;o HTTP/1.0 (<strong>RFC1945</strong>). Em seguida, no ano de 1997, foi fundada uma evolu&ccedil;&atilde;o do protocolo, que era o HTTP/1.1. Esta foi a vers&atilde;o mais robusta e difundida at&eacute; ent&atilde;o. Como diferen&ccedil;as para as vers&otilde;es anteriores, o protocolo passou a ter uma melhor corre&ccedil;&atilde;o de erros, controle de tr&aacute;fego de dados, dados sobre expira&ccedil;&atilde;o das p&aacute;ginas, entre outros. Mas afinal, o que &eacute; HTTP? Em resumo, HTTP &eacute; o protocolo mais usado da internet, que sofreu grande evolu&ccedil;&atilde;o. Resumindo, ele serve para lermos p&aacute;ginas na internet.</p>
 <p>&nbsp;</p>
-<p><strong>Qual &eacute; o contexto?</strong></p>
-<p>Em meados de 1991, Tim Berners Lee criou um protocolo para fazer o download de arquivos hipertexto de servidores. Hipertexto eram os primeitos arquivos que faziam uso da linguagem HTML (Hyper Text Markup Language). A primeira vers&atilde;o do protocolo HTTP &eacute;ra bastante simples, e funcionava atrav&eacute;s de Telnet (um protocolo de comunica&ccedil;&atilde;o de servidores, similar ao&nbsp;<a href="https://www.homehost.com.br/blog/tutoriais/linux/como-acessar-o-servidor-linux-atraves-de-ssh-usando-o-putty/"><strong>SSH</strong></a>). Entre os anos de 1991 e 1995, surgiram os primeiros navegadores web. Por sua vez, eles faziam o download das p&aacute;ginas hipertexto, j&aacute; usando o protocolo HTTP.</p>
-<p>A grande evolu&ccedil;&atilde;o do protocolo HTTP ocorreu em 1996, quando foi lan&ccedil;ada a vers&atilde;o HTTP/1.0 (<a href="https://tools.ietf.org/html/rfc1945"><strong>RFC1945</strong></a>). Em seguida, no ano de 1997, foi fundada uma evolu&ccedil;&atilde;o do protocolo, que era o HTTP/1.1. Esta foi a vers&atilde;o mais robusta e difundida at&eacute; ent&atilde;o. Como diferen&ccedil;as para as vers&otilde;es anteriores, o protocolo passou a ter uma melhor corre&ccedil;&atilde;o de erros, controle de tr&aacute;fego de dados, dados sobre expira&ccedil;&atilde;o das p&aacute;ginas, entre outros. Mas afinal, o que &eacute; HTTP? Em resumo, HTTP &eacute; o protocolo mais usado da internet, que sofreu grande evolu&ccedil;&atilde;o. Resumindo, ele serve para lermos p&aacute;ginas na internet.</p>
-<p>&nbsp;</p>
-<p><strong>Os 9 m&eacute;todos do HTTP</strong></p>
-<p>Ultimamente tenho estudado ASP.NET Web API pois estou montando um curso sobre o assunto para o&nbsp;<a href="https://www.alura.com.br/">Alura</a><br />Quando estamos navegando na web, a todo momento o nosso navegador est&aacute; enviando requisi&ccedil;&otilde;es para um servidor e o servidor, por sua vez, nos devolve uma resposta em um formato espec&iacute;fico ou realiza uma a&ccedil;&atilde;o de acordo com o que pedirmos para ele fazer.</p>
+<h2><strong>Os 9 m&eacute;todos do HTTP</strong></h2>
+<p>Ultimamente tenho estudado ASP.NET Web API pois estou montando um curso sobre o assunto para o&nbsp;Alura<br />Quando estamos navegando na web, a todo momento o nosso navegador est&aacute; enviando requisi&ccedil;&otilde;es para um servidor e o servidor, por sua vez, nos devolve uma resposta em um formato espec&iacute;fico ou realiza uma a&ccedil;&atilde;o de acordo com o que pedirmos para ele fazer.</p>
 <p>Nas requisi&ccedil;&otilde;es, especificamos o que chamamos de&nbsp;<strong>m&eacute;todo</strong>&nbsp;HTTP ou&nbsp;<strong>verbo</strong>. Na vers&atilde;o 1.1 do protocolo HTTP(que &eacute; a que todos usamos atualmente) temos 9 verbos diferentes.</p>
 <p>&nbsp;</p>
-<p><strong>GET</strong></p>
+<h2><strong>GET</strong></h2>
 <p>Essa &eacute; a requisi&ccedil;&atilde;o mais comum de todas. Atrav&eacute;s dessa requisi&ccedil;&atilde;o n&oacute;s pedimos a representa&ccedil;&atilde;o de um recurso: que pode ser um arquivo html, xml, json, etc.<br />Um exemlo de requisi&ccedil;&atilde;o GET seria:</p>
 <p>GET /entendendo-o-net-core-parte-3-o-coreclr/ HTTP/1.1&nbsp;</p>
 <p>User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)&nbsp;</p>
-<p>Host: <a href="http://gabsferreira.com/">http://gabsferreira.com</a>&nbsp;</p>
+<p>Host: http://gabsferreira.com&nbsp;</p>
 <p>Connection: Keep-Alive&nbsp;</p>
-<p><strong>POST</strong></p>
+<h2><strong>POST</strong></h2>
 <p>O m&eacute;todo POST &eacute; utilizado quando queremos&nbsp;<strong>criar</strong>&nbsp;um recurso. Quando usamos POST, os dados v&atilde;o no corpo da requisi&ccedil;&atilde;o e n&atilde;o na URI.</p>
-<p><strong>PUT</strong></p>
+<h2><strong>PUT</strong></h2>
 <p>Requisita que um recurso seja "guardado" na URI fornecida. Se o recurso j&aacute; existir, ele deve ser atualizado. Se n&atilde;o existir, pode ser criado.</p>
-<p><strong>DELETE</strong></p>
+<h2><strong>DELETE</strong></h2>
 <p>Exclui o recurso especificado.</p>
-<p><strong>TRACE</strong></p>
+<h2><strong>TRACE</strong></h2>
 <p>Devolve a mesma requisi&ccedil;&atilde;o que for enviada veja se houve mudan&ccedil;a e/ou adi&ccedil;&otilde;es feitas por servidores intermedi&aacute;rios.</p>
-<p><strong>OPTIONS</strong></p>
+<h2><strong>OPTIONS</strong></h2>
 <p>Retorna os m&eacute;todos HTTP suportados pelo servidor para a URL especificada.</p>
-<p><strong>PATCH</strong></p>
+<h2><strong>PATCH</strong></h2>
 <p>Serve para atualizar&nbsp;<strong>partes</strong>&nbsp;de um recurso, e n&atilde;o o recurso todo.</p>
-<p><strong>CONNECT</strong></p>
+<h2><strong>CONNECT</strong></h2>
 <p>Converte a requisi&ccedil;&atilde;o de conex&atilde;o para um t&uacute;nel TCP/IP transparente, geralmente para facilitar a comunica&ccedil;&atilde;o criptografada com SSL (HTTPS) atrav&eacute;s de um proxy HTTP n&atilde;o criptografado.</p>
-<p><strong>HEAD</strong></p>
+<h2><strong>HEAD</strong></h2>
 <p>Retorna somente os cabe&ccedil;alhos de uma resposta.</p>
-<p><strong>Idempot&ecirc;ncia</strong></p>
+<h2><strong>Idempot&ecirc;ncia</strong></h2>
 <p>Alguns m&eacute;todos, como o GET, podem ser chamados&nbsp;<strong>diversas</strong>&nbsp;vezes seguidas sem problema nenhum: a resposta ser&aacute; sempre a mesma. Isso porque quando fazermos uma requisi&ccedil;&atilde;o do tipo GET n&atilde;o estamos&nbsp;<strong>alterando</strong>&nbsp;nada no servidor, somente consultando informa&ccedil;&otilde;es.</p>
 <p><br />J&aacute; quando estamos fazendo um POST estamos&nbsp;<strong>criando</strong>&nbsp;um novo recurso.<br />Sabe quando voc&ecirc; manda atualizar a p&aacute;gina do seu navegador e ele pergunta se voc&ecirc; quer realmente atualizar essa p&aacute;gina? Que ele vai reenviaar as informa&ccedil;&otilde;es e tal? Ent&atilde;o, essa p&aacute;gina est&aacute; fazendo uma requisi&ccedil;&atilde;o do tipo POST.</p>
 <p><br />Se executarmos a mesma requisi&ccedil;&atilde;o POST duas vezes, corremos o risco de criar dois recursos iguais.</p>
