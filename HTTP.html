@@ -144,6 +144,37 @@
 		  <br>Host: http://gabsferreira.com
 		  <br>Connection: Keep-Alive</i>
 
+		  <br><li><font face="Arial" size="2"><b>POST:</b> O método POST é utilizado quando queremos criar um recurso. Quando usamos POST, os dados vão no corpo da requisição e não na URL.
+		  <br>
+
+		  <br><li><font face="Arial" size="2"><b>PUT:</b> Requisita que um recurso seja "guardado" na URI fornecida. Se o recurso já existir, ele deve ser atualizado. Se não existir, pode ser criado.
+		  <br>
+
+		  <br><li><font face="Arial" size="2"><b>DELETE:</b> Exclui o recurso especificado.
+		  <br>
+
+		  <br><li><font face="Arial" size="2"><b>TRACE:</b> Devolve a mesma requisição que for enviada veja se houve mudança e/ou adições feitas por servidores intermediários.
+		  <br>
+
+		  <br><li><font face="Arial" size="2"><b>OPTIONS:</b> Retorna os métodos HTTP suportados pelo servidor para a URL especificada.
+		  <br>
+
+		  <br><li><font face="Arial" size="2"><b>PATCH:</b> Serve para atualizar partes de um recurso, e não o recurso todo.
+		  <br>
+
+		  <br><li><font face="Arial" size="2"><b>CONNECT:</b> Converte a requisição de conexão para um túnel TCP/IP transparente, geralmente para facilitar a comunicação criptografada com SSL (HTTPS) através de um proxy HTTP não criptografado.
+		  <br>
+
+		  <br><li><font face="Arial" size="2"><b>HEAD:</b> Retorna somente os cabeçalhos de uma resposta.
+		  <br>
+
+		  <br><li><font face="Arial" size="2"><b>IDEMPOTÊNCIA:</b> Alguns métodos, como o GET, podem ser chamados diversas vezes seguidas sem problema nenhum: a resposta será sempre a mesma. Isso porque quando fazermos uma requisição do tipo GET não estamos alterando nada no servidor, somente consultando informações.
+		  <br>Já quando estamos fazendo um POST estamos criando um novo recurso. Sabe quando você manda atualizar a página do seu navegador e ele pergunta se você quer realmente atualizar essa página? Que ele vai reenviaar as informações e tal? Então, essa página está fazendo uma requisição do tipo POST.
+		  <br>Se executarmos a mesma requisição POST duas vezes, corremos o risco de criar dois recursos iguais e isso não é ideal
+		  <br>Os métodos que não alteram nada no servidor e que podemos chamar várias vezes são o que chamamos de métodos idempotentes.
+
+		  <br><li><font face="Arial" size="2"><b>GET, OPTIONS, HEAD, PUT, TRACE, CONNECT e DELETE são idempotentes.</b> 
+
           </font></li><br>
 
           <br><li><font face="Arial" size="2">Na atualidade temos empresas adquirindo outras empresas e cada uma delas apresentando soluções próprias em diferentes plataformas.
