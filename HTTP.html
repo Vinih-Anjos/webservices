@@ -142,7 +142,7 @@
 		  <br><br><i>GET /entendendo-o-net-core-parte-3-o-coreclr/ HTTP/1.1
 		  <br>User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT) 
 		  <br>Host: http://gabsferreira.com
-		  <br>Connection: Keep-Alive</i>
+		  <br>Connection: Keep-Alive</i><br>
 
 		  <br><li><font face="Arial" size="2"><b>POST:</b> O método POST é utilizado quando queremos criar um recurso. Quando usamos POST, os dados vão no corpo da requisição e não na URL.
 		  <br>
@@ -166,14 +166,9 @@
 		  <br>
 
 		  <br><li><font face="Arial" size="2"><b>HEAD:</b> Retorna somente os cabeçalhos de uma resposta.
-		  <br>
+		  <br><br>Os métodos que não alteram nada no servidor e que podemos chamar várias vezes são o que chamamos de métodos idempotentes.
 
-		  <br><li><font face="Arial" size="2"><b>IDEMPOTÊNCIA:</b> Alguns métodos, como o GET, podem ser chamados diversas vezes seguidas sem problema nenhum: a resposta será sempre a mesma. Isso porque quando fazermos uma requisição do tipo GET não estamos alterando nada no servidor, somente consultando informações.
-		  <br>Já quando estamos fazendo um POST estamos criando um novo recurso. Sabe quando você manda atualizar a página do seu navegador e ele pergunta se você quer realmente atualizar essa página? Que ele vai reenviaar as informações e tal? Então, essa página está fazendo uma requisição do tipo POST.
-		  <br>Se executarmos a mesma requisição POST duas vezes, corremos o risco de criar dois recursos iguais e isso não é ideal
-		  <br>Os métodos que não alteram nada no servidor e que podemos chamar várias vezes são o que chamamos de métodos idempotentes.
-
-		  <br><li><font face="Arial" size="2"><b>GET, OPTIONS, HEAD, PUT, TRACE, CONNECT e DELETE são idempotentes.</b> 
+		  <br><br><li><font face="Arial" size="2"><b>GET, OPTIONS, HEAD, PUT, TRACE, CONNECT e DELETE são idempotentes.</b> 
 
           </font></li><br>
 
