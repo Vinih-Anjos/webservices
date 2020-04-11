@@ -112,7 +112,7 @@
 		
 		<td width="99%" height="138"><font face="Arial" size="2"><b>WSDL - O que é?<br>
         </b><br>É uma descrição em formato XML de um Web Service que utilizará SOAP / RPC como protocolo. É o acrônimo de Web Services Description Language (Linguagem de Descrição de Serviços Web).
-		<br><br>RPC – Remote Procedure Calls (em português, chamada de procedimentos remotos) é um modelo que define a forma como são realizadas as chamadas a operações remotas através de web services.
+		<br><br><b>RPC – Remote Procedure Calls </b>(em português, chamada de procedimentos remotos) é um modelo que define a forma como são realizadas as chamadas a operações remotas através de web services.
 		<br><br>Por meio de um WSDL você informa ao cliente como cada serviço em um end-point deve ser invocado: quais os parâmetros e tipo de dados de cada parâmetro é esperado, e qual o tipo de dado do retorno será enviado como resposta.
 		<br><br>Além de descrever cada serviço (que pode ser comparado analogamente à um método a ser executado no programa servidor), também descreve como podem ser encontrados. Seus elementos básicos são:
 
@@ -137,8 +137,8 @@
           </font></li><br>
 
 
-        <p><font face="Arial" size="2"><b>Como funciona?<br>
-        </b><br>Quando você digita um endereço, pesquisa ele em um buscador ou clicou em um link, você fez um pedido via HTTP para um servidor. Para entendermos o que é HTTP, vamos explicar com alguns exemplos.
+        <p><font face="Arial" size="2"><b>O trecho abaixo é o ponto onde definem-se os serviços:<br>
+        </b><br><"wsdl:portType name="ICalculator">
 		<br><br>Esse pedido se chama Request HTTP. Primeiramente, o navegador descobre o endereço IP do servidor web usando o DNS.  Em seguida, o navegador web faz a conexão diretamente com o servidor web, solicitando uma página, imagem ou algum outro arquivo.  Por sua vez, o servidor HTTP envia ao navegador do cliente o conteúdo solicitado.
 		<br><br>Ao receber o seu pedido, nosso servidor leu tudo e entregou o conteúdo para você conforme a demanda. Por exemplo, a entrega também é feita por uma espécie de carta, que nada mais é do que o site visualizado na tela do seu PC, Tablet ou Smartphone. Simples, não? O mais impressionante é que esse processo demora apenas alguns segundos ou até menos!
         <b><br>
