@@ -110,10 +110,31 @@
       <tr>
         <td width="1%" height="138">&nbsp;</td>
 		
-		<td width="99%" height="138"><font face="Arial" size="2"><b>HTTP - O que é?<br>
-        </b><br>HTTP é sigla de HyperText Transfer Protocol que em português significa "Protocolo de Transferência de Hipertexto". É um protocolo de comunicação entre sistemas de informação que permite a transferência de dados entre redes de computadores, principalmente na World Wide Web (Internet).
-		<br><br>O HTTP é o protocolo utilizado para transferência de páginas HTML do computador para a Internet. Por isso, os endereços dos websites (URL) utilizam no início a expressão "http://", definindo o protocolo usado. Esta informação é necessária para estabelecer a comunicação entre a URL e o servidor Web que armazena os dados, enviando então a página HTML solicitada pelo usuário.
-		<br><br>Para que a transferência de dados na Internet seja realizada, o protocolo HTTP necessita estar agregado a outros dois protocolos de rede: TCP (Transmission Control Protocol) e IP (Internet Protocol). Esses dois últimos protocolos formam o modelo TCP/IP, necessário para a conexão entre computadores clientes-servidores.
+		<td width="99%" height="138"><font face="Arial" size="2"><b>WSDL - O que é?<br>
+        </b><br>É uma descrição em formato XML de um Web Service que utilizará SOAP / RPC como protocolo. É o acrônimo de Web Services Description Language (Linguagem de Descrição de Serviços Web).
+		<br><br>RPC – Remote Procedure Calls (em português, chamada de procedimentos remotos) é um modelo que define a forma como são realizadas as chamadas a operações remotas através de web services.
+		<br><br>Por meio de um WSDL você informa ao cliente como cada serviço em um end-point deve ser invocado: quais os parâmetros e tipo de dados de cada parâmetro é esperado, e qual o tipo de dado do retorno será enviado como resposta.
+		<br><br>Além de descrever cada serviço (que pode ser comparado analogamente à um método a ser executado no programa servidor), também descreve como podem ser encontrados. Seus elementos básicos são:
+
+		  <br><br><li><font face="Arial" size="2"><b>types</b> Aqui deverão ser descritos os tipos de dados suportados pelo serviço em questão.
+		  
+		  <br><li><font face="Arial" size="2"><b>message:</b> Aqui devem ser especificados os padrões de entrada e saída de dados dos web services.
+		  <br>
+
+		  <br><li><font face="Arial" size="2"><b>portType:</b> Aqui devem ser descritos os agrupamentos lógicos das operações. São as operações executadas pelo web service.
+		  <br>
+
+		  <br><li><font face="Arial" size="2"><b>binding:</b> Aqui devem ser apresentados os protocolos de comunicação que os web services utilizam.
+		  <br>
+		  
+		  <br><li><font face="Arial" size="2"><b>operation:</b> Região que permite a especificação das assinaturas dos métodos disponibilizados.
+		  <br>
+
+		  <br><li><font face="Arial" size="2"><b>definitions:</b> Elemento padrão de todos os documentos WSDL. Permite efetuar descrições sobre schemas e namespaces.
+		  <br>
+
+          </font></li><br>
+
 
         <p><font face="Arial" size="2"><b>Como funciona?<br>
         </b><br>Quando você digita um endereço, pesquisa ele em um buscador ou clicou em um link, você fez um pedido via HTTP para um servidor. Para entendermos o que é HTTP, vamos explicar com alguns exemplos.
@@ -134,44 +155,6 @@
 		<br><br>Nas requisições, especificamos o que chamamos de método HTTP ou verbo. Na versão 1.1 do protocolo HTTP(que é a que todos usamos atualmente) temos 9 verbos diferentes.
 
         </font><ul>
-         
-		<b>Os 9 métodos são:</b><br>
-
-		  <br><li><font face="Arial" size="2"><b>GET:</b> Essa é a requisição mais comum de todas. Através dessa requisição nós pedimos a representação de um recurso: que pode ser um arquivo html, xml, json, etc.
-		  <br><br>Um exemplo de requisição GET seria:
-		  <br><br><i>GET /entendendo-o-net-core-parte-3-o-coreclr/ HTTP/1.1
-		  <br>User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT) 
-		  <br>Host: http://gabsferreira.com
-		  <br>Connection: Keep-Alive</i><br>
-
-		  <br><li><font face="Arial" size="2"><b>POST:</b> O método POST é utilizado quando queremos criar um recurso. Quando usamos POST, os dados vão no corpo da requisição e não na URL.
-		  <br>
-
-		  <br><li><font face="Arial" size="2"><b>PUT:</b> Requisita que um recurso seja "guardado" na URI fornecida. Se o recurso já existir, ele deve ser atualizado. Se não existir, pode ser criado.
-		  <br>
-
-		  <br><li><font face="Arial" size="2"><b>DELETE:</b> Exclui o recurso especificado.
-		  <br>
-
-		  <br><li><font face="Arial" size="2"><b>TRACE:</b> Devolve a mesma requisição que for enviada veja se houve mudança e/ou adições feitas por servidores intermediários.
-		  <br>
-
-		  <br><li><font face="Arial" size="2"><b>OPTIONS:</b> Retorna os métodos HTTP suportados pelo servidor para a URL especificada.
-		  <br>
-
-		  <br><li><font face="Arial" size="2"><b>PATCH:</b> Serve para atualizar partes de um recurso, e não o recurso todo.
-		  <br>
-
-		  <br><li><font face="Arial" size="2"><b>CONNECT:</b> Converte a requisição de conexão para um túnel TCP/IP transparente, geralmente para facilitar a comunicação criptografada com SSL (HTTPS) através de um proxy HTTP não criptografado.
-		  <br>
-
-		  <br><li><font face="Arial" size="2"><b>HEAD:</b> Retorna somente os cabeçalhos de uma resposta.
-		  <br><br>Os métodos que não alteram nada no servidor e que podemos chamar várias vezes são o que chamamos de métodos idempotentes.
-
-		  <br><br><li><font face="Arial" size="2"><b>GET, OPTIONS, HEAD, PUT, TRACE, CONNECT e DELETE são idempotentes.</b> 
-
-          </font></li><br>
-
         </ul>
         <hr></td>
       </tr>
