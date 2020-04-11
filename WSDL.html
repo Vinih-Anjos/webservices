@@ -152,6 +152,32 @@
 		<br>message=&quot;tns:ICalculator_Subtract_OutputMessage&quot; /&gt;
 		<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/wsdl:operation&gt;
 		<br>&nbsp;&nbsp;&lt;/wsdl:portType&gt;
+		</i>
+
+		<p><font face="Arial" size="2"><b>O trecho abaixo descreve como cada serviço deve ser chamado:<br>
+        </b><br><i>&lt;wsdl:binding name=&quot;DefaultBinding_ICalculator&quot; type=&quot;tns:ICalculator&quot;&gt;
+		<br>&nbsp;&nbsp;&lt;soap:binding transport=&quot;http://schemas.xmlsoap.org/soap/http&quot; /&gt;
+		<br>&nbsp;&nbsp;&lt;wsdl:operation name=&quot;Add&quot;&gt;
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;soap:operation soapAction=&quot;http://Example.org/ICalculator/Add&quot; style=&quot;document&quot; /&gt;
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;wsdl:input&gt;
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;soap:body use=&quot;literal&quot; /&gt;
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/wsdl:input&gt;
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;wsdl:output&gt;
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;soap:body use=&quot;literal&quot; /&gt;
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/wsdl:output&gt;
+		<br>&nbsp;&nbsp;&lt;/wsdl:operation&gt;
+		<br>&nbsp;&nbsp;&lt;wsdl:operation name=&quot;Subtract&quot;&gt;
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;soap:operation soapAction=&quot;http://Example.org/ICalculator/Subtract&quot; style=&quot;document&quot; /&gt;
+		
+		<br>&lt;wsdl:input&gt;
+		<br>&lt;soap:body use=&quot;literal&quot; /&gt;
+		<br>&lt;/wsdl:input&gt;
+		<br>&lt;wsdl:output&gt;
+		<br>&lt;soap:body use=&quot;literal&quot; /&gt;
+		<br>&lt;/wsdl:output&gt;
+		<br>&lt;/wsdl:operation&gt;
+		<br>&lt;/wsdl:binding&gt;
+		
 		</i>	
         
 		<br><br>Resolve que problema?</b><br>
