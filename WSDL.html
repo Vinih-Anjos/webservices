@@ -139,23 +139,22 @@
 
         <p><font face="Arial" size="2"><b>O trecho abaixo é o ponto onde definem-se os serviços:<br>
         </b><br><i>&lt;wsdl:portType name=&quot;ICalculator&quot;&gt;
-		<br>&nbsp;&lt;wsdl:operation name=&quot;Add&quot;&gt;
-		<br>&nbsp;&nbsp;&lt;wsdl:input wsaw:Action=&quot;http://Example.org/ICalculator/Add&quot;
-        <br>&nbsp;&nbsp;message=&quot;tns:ICalculator_Add_InputMessage&quot; /&gt;
-		<br>&lt;wsdl:output wsaw:Action=&quot;http://Example.org/ICalculator/AddResponse&quot;
+		<br>&nbsp;&nbsp;&lt;wsdl:operation name=&quot;Add&quot;&gt;
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;wsdl:input wsaw:Action=&quot;http://Example.org/ICalculator/Add&quot;
+        <br>message=&quot;tns:ICalculator_Add_InputMessage&quot; /&gt;
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;wsdl:output wsaw:Action=&quot;http://Example.org/ICalculator/AddResponse&quot;
 		<br>message=&quot;tns:ICalculator_Add_OutputMessage&quot; /&gt;
-		<br>&lt;/wsdl:operation&gt;
-		<br>&lt;wsdl:operation name=&quot;Subtract&quot;&gt;
-		<br>&lt;wsdl:input wsaw:Action=&quot;http://Example.org/ICalculator/Subtract&quot;
+		<br>&nbsp;&nbsp;&lt;/wsdl:operation&gt;
+		<br>&nbsp;&nbsp;&lt;wsdl:operation name=&quot;Subtract&quot;&gt;
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;wsdl:input wsaw:Action=&quot;http://Example.org/ICalculator/Subtract&quot;
 		<br>message=&quot;tns:ICalculator_Subtract_InputMessage&quot; /&gt;
-		<br>&lt;wsdl:output wsaw:Action=&quot;http://Example.org/ICalculator/SubtractResponse&quot;
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;wsdl:output wsaw:Action=&quot;http://Example.org/ICalculator/SubtractResponse&quot;
 		<br>message=&quot;tns:ICalculator_Subtract_OutputMessage&quot; /&gt;
-		<br>&lt;/wsdl:operation&gt;
-		<br>&lt;/wsdl:portType&gt;
-
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/wsdl:operation&gt;
+		<br>&nbsp;&nbsp;&lt;/wsdl:portType&gt;
 		</i>	
         
-		<br>Resolve que problema?</b><br>
+		<br><br>Resolve que problema?</b><br>
         <br>Além do conteúdo da página web, um servidor de hospedagem de sites sempre retorna os códigos de resposta. Eles representam mensagens de sucesso ou falha, quando acessamos um site.
 		<br><br>Por exemplo, quando uma página é carregada com sucesso, o servidor informa o código 200 (Sucesso). Contudo, quando uma página não é encontrada, ele informa o código de erro 404 (Não Encontrado). Nos casos em que há problemas no site, o código retornado é o erro 500. Você pode ver neste outro artigo uma relação completa com os códigos de resposta do servidor HTTP.
   
