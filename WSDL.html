@@ -178,9 +178,13 @@
 		<br>&lt;/wsdl:binding&gt;
 		</i>	
         
-		<br><br>Resolve que problema?</b><br>
-        <br>Além do conteúdo da página web, um servidor de hospedagem de sites sempre retorna os códigos de resposta. Eles representam mensagens de sucesso ou falha, quando acessamos um site.
-		<br><br>Por exemplo, quando uma página é carregada com sucesso, o servidor informa o código 200 (Sucesso). Contudo, quando uma página não é encontrada, ele informa o código de erro 404 (Não Encontrado). Nos casos em que há problemas no site, o código retornado é o erro 500. Você pode ver neste outro artigo uma relação completa com os códigos de resposta do servidor HTTP.
+		<br><br><b>O trecho abaixo define a localização do serviço CalculatorService</b><br>
+        <br>&lt;wsdl:service name=&quot;CalculatorService&quot;&gt;
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;wsdl:port name=&quot;ICalculator&quot; binding=&quot;tns:DefaultBinding_ICalculator&quot;&gt;
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;soap:address location=&quot;http://Example.org/ICalculator&quot; /&gt;
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/wsdl:port&gt;
+		<br>&nbsp;&nbsp;&lt;/wsdl:service&gt;
+		<br>&lt;/wsdl:definitions&gt;
   
 		<br><br><b>Qual é o contexto?</b><br>
         <br>Em meados de 1991, Tim Berners Lee criou um protocolo para fazer o download de arquivos hipertexto de servidores. Hipertexto eram os primeitos arquivos que faziam uso da linguagem HTML (Hyper Text Markup Language). A primeira versão do protocolo HTTP éra bastante simples, e funcionava através de Telnet (um protocolo de comunicação de servidores, similar ao SSH). Entre os anos de 1991 e 1995, surgiram os primeiros navegadores web. Por sua vez, eles faziam o download das páginas hipertexto, já usando o protocolo HTTP.
