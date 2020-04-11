@@ -186,15 +186,10 @@
 		<br>&nbsp;&nbsp;&lt;/wsdl:service&gt;
 		<br>&lt;/wsdl:definitions&gt;
   
-		<br><br><b>Qual é o contexto?</b><br>
-        <br>Em meados de 1991, Tim Berners Lee criou um protocolo para fazer o download de arquivos hipertexto de servidores. Hipertexto eram os primeitos arquivos que faziam uso da linguagem HTML (Hyper Text Markup Language). A primeira versão do protocolo HTTP éra bastante simples, e funcionava através de Telnet (um protocolo de comunicação de servidores, similar ao SSH). Entre os anos de 1991 e 1995, surgiram os primeiros navegadores web. Por sua vez, eles faziam o download das páginas hipertexto, já usando o protocolo HTTP.
-		<br><br>A grande evolução do protocolo HTTP ocorreu em 1996, quando foi lançada a versão HTTP/1.0 (RFC1945). Em seguida, no ano de 1997, foi fundada uma evolução do protocolo, que era o HTTP/1.1. Esta foi a versão mais robusta e difundida até então. Como diferenças para as versões anteriores, o protocolo passou a ter uma melhor correção de erros, controle de tráfego de dados, dados sobre expiração das páginas, entre outros. Mas afinal, o que é HTTP? Em resumo, HTTP é o protocolo mais usado da internet, que sofreu grande evolução. Resumindo, ele serve para lermos páginas na internet.
+		<br><br>Como citado no primeiro parágrafo, WSDL é utilizado diretamente com SOAP, quando um cliente realiza uma chamada de serviço por meio de SOAP, primeiramente ele solicita o WSDL para entender como se dará esta negociação.
+		<br><br>REST trabalha sobre o protocolo HTTP puro, portanto não depende do protocolo SOAP para realizar a comunicação, em consequência não necessita usar uma WSDL. Apenas os verbos HTTP são utilizados. Neste caso, para um cliente solicitar serviços REST, ele necessita de antemão conhecer o caminho e interface deles. Significa dizer que o desenvolvedor precisará de manual ou guia de programação para usar uma API REST.
 
-		<br><br><b>Os 9 Métodos do HTTP</b><br>
-        <br>Quando estamos navegando na web, a todo momento o nosso navegador está enviando requisições para um servidor e o servidor, por sua vez, nos devolve uma resposta em um formato específico ou realiza uma ação de acordo com o que pedirmos para ele fazer.
-		<br><br>Nas requisições, especificamos o que chamamos de método HTTP ou verbo. Na versão 1.1 do protocolo HTTP(que é a que todos usamos atualmente) temos 9 verbos diferentes.
-
-        </font><ul>
+		</font><ul>
         </ul>
         <hr></td>
       </tr>
